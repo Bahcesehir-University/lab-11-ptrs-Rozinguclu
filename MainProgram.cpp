@@ -129,7 +129,7 @@ bool isNullptr(int* p)
     // TODO 4: compare p to nullptr and return the result
 
 
-    return false; // placeholder -- replace this line
+    return p == nullptr; // placeholder -- replace this line
 }
 
 // ------------------------------------------------------------
@@ -302,7 +302,7 @@ void findMinMax(const int* arr, int size, int* minVal, int* maxVal)
 *maxVal= arr[0];
 for(int i=1;i<size;i++){
 if(arr[i]<*minVal)*minVal=arr[i];
-if(arr[i]<*maxVal)*maxVal=arr[i];
+if(arr[i]>*maxVal)*maxVal=arr[i];
 }
 }
 void challengeA_minMax()
